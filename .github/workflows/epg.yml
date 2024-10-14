@@ -36,4 +36,4 @@ jobs:
           workflow: ".github/workflows/epg.yml"
           older-than-seconds: 3600
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
