@@ -38,6 +38,6 @@ jobs:
       if: ${{ github.event.action == 'opened' || github.event.action == 'reopened' }}
       uses: actions-ecosystem/action-create-comment@v1
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.MY_GITHUB_TOKEN }}
         body: |
           Hi @${{ github.event.pull_request.user.login }}, thank you for your pull request. We will review it soon.
